@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-sL-xK1">
+                        <rect key="frame" x="19" y="18" width="86" height="86"/>
+                        <color key="backgroundColor" red="0.0" green="0.68235296010000002" blue="0.70980393890000004" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kn5-sL-xK1" secondAttribute="height" multiplier="1:1" id="0aY-Q3-4GY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcL-hG-lye">
+                        <rect key="frame" x="129" y="26" width="94" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="0.0" green="0.68235296010971069" blue="0.70980393886566162" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcj-q4-yBr">
+                        <rect key="frame" x="141" y="69" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kn5-sL-xK1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="F3N-sN-5oU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kn5-sL-xK1" secondAttribute="bottom" constant="10" id="ONy-ys-Wu9"/>
+                    <constraint firstItem="fcL-hG-lye" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Vv6-XJ-hdC"/>
+                    <constraint firstItem="kn5-sL-xK1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Xjk-D1-sia"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lcj-q4-yBr" secondAttribute="bottom" constant="24" id="bRK-KP-Tnd"/>
+                    <constraint firstItem="fcL-hG-lye" firstAttribute="leading" secondItem="kn5-sL-xK1" secondAttribute="trailing" constant="24" id="hyO-la-ajM"/>
+                    <constraint firstItem="lcj-q4-yBr" firstAttribute="leading" secondItem="kn5-sL-xK1" secondAttribute="trailing" constant="36" id="qPF-q7-6LE"/>
+                    <constraint firstItem="fcL-hG-lye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="xgT-uq-BO5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureView" destination="kn5-sL-xK1" id="6II-og-eCC"/>
+                <outlet property="singerLabel" destination="lcj-q4-yBr" id="TvP-uU-7k4"/>
+                <outlet property="songNameLabel" destination="fcL-hG-lye" id="rf3-UH-c5V"/>
+            </connections>
+            <point key="canvasLocation" x="545.5" y="378.5"/>
+        </tableViewCell>
+    </objects>
+</document>
